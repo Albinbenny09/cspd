@@ -24,7 +24,7 @@ const CTASection = () => {
               Join our mission to address demographic shifts and development challenges through evidence-based research.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a href="https://cspd.in/contact/" className="bg-secondary hover:bg-white hover:text-primary text-white font-bold py-5 px-12 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-secondary/50 active:scale-95 text-lg w-full sm:w-auto">
+              <a href="https://cspdin.wordpress.com/contact/" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-white hover:text-primary text-white font-bold py-5 px-12 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-secondary/50 active:scale-95 text-lg w-full sm:w-auto">
                 Collaborate With Us
               </a>
               <a href="https://cspd.in/resources-data-repository/" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold py-5 px-12 rounded-2xl transition-all duration-300 border border-white/20 active:scale-95 text-lg w-full sm:w-auto">

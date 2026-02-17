@@ -17,12 +17,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     { name: "Team", href: "#team" },
     { name: "Research Labs", href: "#research" },
     { name: "Initiatives", href: "#initiatives" },
-    { name: "Resources", href: "#resources" },
-    { name: "Connect", href: "#connect" },
+    { name: "Connect", href: "https://cspdin.wordpress.com/contact/" },
   ];
 
   return (
@@ -47,13 +46,20 @@ const Navbar = () => {
               key={link.name}
               href={link.href}
               className={`${scrolled ? "text-gray-700 hover:text-primary" : "text-white/80 hover:text-white"} font-medium transition-colors`}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
             >
               {link.name}
             </Link>
           ))}
-          <button className="bg-secondary hover:bg-white hover:text-primary text-white font-bold py-2.5 px-6 rounded-lg transition-all duration-300 shadow-md">
-            Subscribe
-          </button>
+          <Link 
+            href="https://cspdin.wordpress.com/contact/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary hover:bg-white hover:text-primary text-white font-bold py-2.5 px-6 rounded-lg transition-all duration-300 shadow-md"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -77,11 +83,21 @@ const Navbar = () => {
                 href={link.href}
                 className="text-gray-700 hover:text-primary text-lg font-medium"
                 onClick={() => setIsOpen(false)}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
               >
                 {link.name}
               </Link>
             ))}
-            <button className="bg-secondary text-white font-bold py-3 px-6 rounded-lg w-full">Subscribe</button>
+            <Link 
+              href="https://cspdin.wordpress.com/contact/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-secondary text-white font-bold py-3 px-6 rounded-lg w-full text-center"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       )}

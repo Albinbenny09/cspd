@@ -33,11 +33,21 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-xl mb-8">Navigation</h4>
             <ul className="space-y-4">
-              {["About Us", "Team Members", "Research Labs", "Initiatives", "Resources"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-gray-400 hover:text-primary transition-colors flex items-center space-x-2">
+              {[
+                { name: "About Us", href: "#about" },
+                { name: "Research Labs", href: "#research" },
+                { name: "Initiatives", href: "#initiatives" },
+                { name: "Connect", href: "https://cspdin.wordpress.com/contact/" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link 
+                    href={item.href} 
+                    className="text-gray-400 hover:text-primary transition-colors flex items-center space-x-2"
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
-                    <span>{item}</span>
+                    <span>{item.name}</span>
                   </Link>
                 </li>
               ))}
