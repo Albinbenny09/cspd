@@ -25,7 +25,7 @@ const Hero = () => {
           
          
 
-          <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-white drop-shadow-sm font-serif">
+          <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-white drop-shadow-sm font-serif">
             Centre for Studies in <span >Population</span> and Development
           </h1>
            
