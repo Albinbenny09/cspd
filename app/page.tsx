@@ -17,7 +17,7 @@ export default function Home() {
         <WhyChooseUs />
         <Courses />
         <Testimonials />
-        <CTASection />
+    
       </main>
       <Footer />
     </div>

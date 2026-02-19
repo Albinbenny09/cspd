@@ -1,4 +1,4 @@
-import { Share2, Network, GraduationCap, MapPin } from "lucide-react";
+import { Share2, Network, GraduationCap, MapPin, Activity } from "lucide-react";
 
 const WhyChooseUs = () => {
   const labs = [
@@ -21,6 +21,11 @@ const WhyChooseUs = () => {
       icon: <MapPin className="w-10 h-10" />,
       title: "Food, Ecology & Climate Change",
       description: "Interdisciplinary research with concerns on equity and climate justice."
+    },
+    {
+      icon: <Activity className="w-10 h-10" />,
+      title: "Health, Medicine, and Care Economy",
+      description: "Explorations into healthcare systems, care work, and the social and economic dimensions of health and well-well-being."
     }
   ];
 
@@ -34,7 +39,7 @@ const WhyChooseUs = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {labs.map((lab, index) => (
             <div 
               key={index} 
