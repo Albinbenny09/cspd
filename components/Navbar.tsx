@@ -88,12 +88,11 @@ const Navbar = () => {
         {/* Left: CSPD Logo - Priority match screenshot */}
         <Link href="/" className="flex items-center">
           <img 
-            src="https://cspdin.wordpress.com/wp-content/uploads/2025/06/cspd-logo-20250209112148.jpg" 
+            src="\cspdlogo.png" 
             alt="CSPD Logo" 
-            className={`${scrolled ? "h-10" : "h-14"} lg:${scrolled ? "h-12" : "h-16"} w-auto object-contain transition-all duration-300 rounded-lg shadow-sm`}
+            className={`${scrolled ? "h-10" : "h-14"} lg:${scrolled ? "h-12" : "h-16"} w-auto object-contain transition-all duration-300 bg-white p-1 rounded-md shadow-sm`}
           />
         </Link>
-
         {/* Desktop Links (Center) */}
         <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (

@@ -28,16 +28,21 @@ const Hero = () => {
           <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-white drop-shadow-sm font-serif">
             Centre for Studies in <span >Population</span> and Development
           </h1>
+         
            
           <div className="space-y-4">
             <p className="text-lg text-white/80 max-w-xl leading-relaxed">
-              Fostering evidence-based research on demographic shifts, human capital, and climate justice — bridging the Global South and North.
+             The Centre for Studies in Population and Development, hosted by the Department of Economics, CHRIST (Deemed to be University), strives to foster research expertise on themes related to population and development. The Centre envisions to be a leader in fostering interdisciplinary scholarship, with emphasis on economic, social and climate justice.
+             </p>
+            <p className="text-lg text-white/80 max-w-xl leading-relaxed">
+              The Centre’s mission is to deal with the questions of rapid demographic shifts and development challenges through evidence-based research. Population growth and ageing coexist in parts of the world, with varying implications for policy making. While Global South predominantly faces issues related to rapid urbanization, youth employment, and social security. The Global North, on the other hand, is burdened with increased healthcare costs and shrinking workforce. Our objective is to engage in deeper interdisciplinary scholarship, with concerns on equity, social and climate justice. 
             </p>
+            
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Link href="#research" className="bg-secondary hover:bg-sand-light text-primary font-bold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
-              <span>OUR RESEARCH LABS</span>
+            <Link href="/about-us" className="bg-secondary hover:bg-sand-light text-primary font-bold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
+              <span>Take A Deep Dive</span>
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </Link>
           </div>

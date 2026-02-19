@@ -102,7 +102,11 @@ const nextConfig: NextConfig = {
       {
         source: '/contact',
         destination: 'https://cspdin.wordpress.com/contact/',
-      }
+      },
+      {
+        source: '/about-us',
+        destination: 'https://cspdin.wordpress.com/about-us/'
+      },
     ];
   },
 };

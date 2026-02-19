@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Courses from "@/components/Courses";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
+import Partners from "@/components/Partners";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -16,8 +17,8 @@ export default function Home() {
         <About />
         <WhyChooseUs />
         <Courses />
+        <Partners />
         <Testimonials />
-    
       </main>
       <Footer />
     </div>

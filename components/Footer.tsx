@@ -18,7 +18,7 @@ const Footer = () => {
               <img 
                 src="https://cspdin.wordpress.com/wp-content/uploads/2025/06/cspd-logo-20250209112148.jpg" 
                 alt="CSPD Logo" 
-                className="h-12 w-auto object-contain rounded-md shadow-sm"
+                className="h-12 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
               />
             </div>
             <p className="text-white/60 leading-relaxed">
@@ -35,10 +35,10 @@ const Footer = () => {
             <h4 className="font-bold text-xl mb-8 text-secondary font-serif italic">Navigation</h4>
             <ul className="space-y-4">
               {[
-                { name: "About Us", href: "#about" },
+                { name: "About Us", href: "/about-us" },
                 { name: "Research Labs", href: "#research" },
                 { name: "Initiatives", href: "#initiatives" },
-                { name: "Connect", href: "https://cspdin.wordpress.com/contact/" }
+                { name: "Connect", href: "/contact" }
               ].map((item) => (
                 <li key={item.name}>
                   <Link 

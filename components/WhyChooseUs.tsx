@@ -58,17 +58,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
         
-        <div className="mt-20 p-1 bg-white/10 rounded-3xl">
-           <div className="bg-white/5 p-8 md:p-12 rounded-[22px] flex flex-col md:flex-row items-center justify-between gap-8 border border-white/5">
-              <div className="text-center md:text-left">
-                <p className="text-2xl font-bold">Collaborative Discussions</p>
-                <p className="text-white/60">Partnering with TDU, FAS Bangalore, and leading Global South institutions.</p>
-              </div>
-              <a href="https://cspd.in/contact/" className="bg-white text-primary px-10 py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all shadow-lg text-center">
-                Contact the Centre
-              </a>
-           </div>
-        </div>
+        
       </div>
     </section>
   );
