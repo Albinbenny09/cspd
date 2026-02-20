@@ -18,7 +18,7 @@ const About = () => {
               HOPES Conference 2026
             </h2>
             <p className="text-neutral-600 text-base leading-relaxed mb-8">
-This three- day conference aims for a rigorous academic discourse on health-system challenges and the latest research in social sciences, bringing together field experts and early-career researchers.            </p>
+This three-day conference aims for a rigorous academic discourse on health-system challenges and the latest research in social sciences, bringing together field experts and early-career researchers.            </p>
             <Link
               href="/hopes-conference"
               className="inline-flex items-center gap-2 bg-[#5C1A2E] hover:bg-[#3D111F] text-white font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"

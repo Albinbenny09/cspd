@@ -106,13 +106,13 @@ const Navbar = () => {
                   <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
                 </button>
               ) : (
-                <Link
+                <a
                   href={link.href}
                   className="relative text-secondary font-bold uppercase tracking-widest text-xs hover:text-white transition-colors py-2 group/link"
                 >
                   {link.name}
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-secondary scale-x-0 group-hover/link:scale-x-100 transition-transform duration-300 origin-left ${link.name === "Home" ? "scale-x-100" : ""}`}></span>
-                </Link>
+                </a>
               )}
 
               {/* Desktop Dropdown Menu */}
@@ -120,13 +120,13 @@ const Navbar = () => {
                 <div className="absolute top-full left-0 mt-2 w-56 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 z-50">
                   <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 py-2">
                     {link.dropdown.map((sub) => (
-                      <Link
+                      <a
                         key={sub.name}
                         href={sub.href}
                         className="block px-6 py-3 text-sm font-medium text-gray-700 hover:bg-burgundy-tint hover:text-primary transition-colors"
                       >
                         {sub.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -171,26 +171,26 @@ const Navbar = () => {
                     {activeDropdown === link.name && (
                       <div className="flex flex-col pl-4 space-y-2 mt-2 border-l border-white/10">
                         {link.dropdown.map((sub) => (
-                          <Link
+                          <a
                             key={sub.name}
                             href={sub.href}
                             className="text-white/70 hover:text-white text-base font-medium py-1"
                             onClick={() => setIsOpen(false)}
                           >
                             {sub.name}
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     )}
                   </>
                 ) : (
-                  <Link
+                  <a
                     href={link.href}
                     className="text-secondary hover:text-white text-lg font-bold uppercase tracking-widest py-2"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 )}
               </div>
             ))}
