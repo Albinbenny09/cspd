@@ -23,40 +23,40 @@ const Navbar = () => {
       name: "Team", 
       href: "#",
       dropdown: [
-        { name: "Internal Advisory Committee", href: "https://cspd.in/internal-advisory-committee/" },
-        { name: "External Advisory Committee", href: "https://cspd.in/expert-advisory-board/" },
-        { name: "Affiliate Members", href: "https://cspd.in/team-associate-members/" },
-        { name: "People", href: "https://cspd.in/team-members/" },
+        { name: "Internal Advisory Committee", href: "https://cspdin.wordpress.com/internal-advisory-committee/" },
+        { name: "External Advisory Committee", href: "https://cspdin.wordpress.com/expert-advisory-board/" },
+        { name: "Affiliate Members", href: "https://cspdin.wordpress.com/team-associate-members/" },
+        { name: "People", href: "https://cspdin.wordpress.com/team-members/" },
       ]
     },
     { 
       name: "Research Labs", 
       href: "#research",
       dropdown: [
-        { name: "Population Dynamics & Ageing", href: "https://cspd.in/research-population-dynamics/" },
-        { name: "Health, Medicine, and Care Economy", href: "https://cspd.in/research-health-and-care-economy/" },
-        { name: "Human Capital, Labour Markets and Migration", href: "https://cspd.in/research-human-capital-and-labour-markets/" },
-        { name: "Science, Technology and Innovation", href: "https://cspd.in/research-technology-and-innovation/" },
-        { name: "Food, Ecology, and Climate Change", href: "https://cspd.in/research-food-and-ecology/" },
+        { name: "Population Dynamics & Ageing", href: "https://cspdin.wordpress.com/research-population-dynamics/" },
+        { name: "Health, Medicine, and Care Economy", href: "https://cspdin.wordpress.com/research-health-and-care-economy/" },
+        { name: "Human Capital, Labour Markets and Migration", href: "https://cspdin.wordpress.com/research-human-capital-and-labour-markets/" },
+        { name: "Science, Technology and Innovation", href: "https://cspdin.wordpress.com/research-technology-and-innovation/" },
+        { name: "Food, Ecology, and Climate Change", href: "https://cspdin.wordpress.com/research-food-and-ecology/" },
       ]
     },
     { 
       name: "Initiatives", 
       href: "#initiatives",
       dropdown: [
-        { name: "Seminars & Centre Talk Series", href: "https://cspd.in/intitiatives-lecture-series/" },
-        { name: "HOPES Conference 2026", href: "https://cspd.in/hopes-conference/" },
-        { name: "Summer School", href: "https://cspd.in/intitiatives-doctoral-colloquium/" },
-        { name: "Trainings & Workshops", href: "https://cspd.in/intitiatives-training/" },    
-        { name: "Faculty & Student Exchanges", href: "https://cspd.in/intitiatives-faculty-student-exchanges/" },
+        { name: "Seminars & Centre Talk Series", href: "https://cspdin.wordpress.com/intitiatives-lecture-series/" },
+        { name: "HOPES Conference 2026", href: "https://cspdin.wordpress.com/hopes-conference/" },
+        { name: "Summer School", href: "https://cspdin.wordpress.com/intitiatives-doctoral-colloquium/" },
+        { name: "Trainings & Workshops", href: "https://cspdin.wordpress.com/intitiatives-training/" },    
+        { name: "Faculty & Student Exchanges", href: "https://cspdin.wordpress.com/intitiatives-faculty-student-exchanges/" },
       ]
     },
     { 
       name: "Connect", 
       href: "#connect",
       dropdown: [
-        { name: "Global", href: "https://cspd.in/connect-global/" },
-        { name: "Community", href: "https://cspd.in/connect-community/" },
+        { name: "Global", href: "https://cspdin.wordpress.com/connect-global/" },
+        { name: "Community", href: "https://cspdin.wordpress.com/connect-community/" },
       ]
     },
     { 
