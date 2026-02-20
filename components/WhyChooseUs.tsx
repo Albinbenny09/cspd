@@ -33,9 +33,8 @@ const WhyChooseUs = () => {
     <section id="research" className="section-padding bg-primary text-white overflow-hidden relative">
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mb-16 space-y-4">
-          <h3 className="text-secondary font-bold tracking-widest uppercase text-sm">Research Labs</h3>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Our Core <span className="text-secondary">Research Pillars</span>
+            Our <span className="text-secondary">Research Labs</span>
           </h2>
         </div>
 

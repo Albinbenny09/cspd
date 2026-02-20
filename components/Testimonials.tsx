@@ -68,7 +68,7 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-white text-sm">{event.speaker}</h4>
-                  <p className="text-white/40 text-xs lowercase">Delivered at CSPD</p>
+                
                 </div>
               </div>
             </div>

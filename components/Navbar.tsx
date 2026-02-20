@@ -47,7 +47,7 @@ const Navbar = () => {
         { name: "Seminars & Centre Talk Series", href: "/intitiatives-lecture-series" },
         { name: "Hopes Conference", href: "/hopes-conference" },
         { name: "Trainings & Workshops", href: "/intitiatives-training" },
-        { name: "Graduate Research Colloquium", href: "/intitiatives-doctoral-colloquium" },
+       //{ name: "Graduate Research Colloquium", href: "/intitiatives-doctoral-colloquium" },
         { name: "Faculty & Student Exchanges", href: "/intitiatives-faculty-student-exchanges" },
       ]
     },
@@ -79,22 +79,20 @@ const Navbar = () => {
   ];
 
   return (
-     <nav
+    <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-[#3D111F] shadow-lg py-3" : "bg-[#3D111F] backdrop-blur-md py-4"
       }`}
     >
       <div className="container-custom flex justify-between items-center">
         {/* Left: CSPD Logo - Priority match screenshot */}
-        <Link href="/" className="flex items-center">
-          <img 
-            src="\cspdlogo.png" 
-            alt="CSPD Logo" 
-            className={`${scrolled ? "h-10" : "h-14"} lg:${scrolled ? "h-12" : "h-16"} w-auto object-contain transition-all duration-300 bg-white p-1 rounded-md shadow-sm`}
-          />
+        <Link href="/" className="flex items-center space-x-2">
+          <span className="text-white font-serif text-xl lg:text-2xl font-bold tracking-tight">
+            CSPD <span className="opacity-50">·</span> <span className="text-white/80 font-medium">Christ University</span>
+          </span>
         </Link>
-        {/* Desktop Links (Center) */}
-        <div className="hidden lg:flex items-center space-x-6">
+        {/* Desktop Links (Right) */}
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <div key={link.name} className="relative group">
               {link.dropdown ? (
@@ -136,23 +134,14 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right: Christ University Logo */}
-        <div className="flex items-center space-x-4">
-          <img 
-            src="https://cspdin.wordpress.com/wp-content/uploads/2025/03/christ_university_logo.jpeg" 
-            alt="Christ University Logo" 
-            className={`${scrolled ? "h-10" : "h-14"} lg:${scrolled ? "h-12" : "h-16"} w-auto object-contain transition-all duration-300 bg-white p-1 rounded-md shadow-sm`}
-          />
-
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-secondary"
-            >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
+        {/* Mobile Menu Button - Moved to end of flex row */}
+        <div className="flex items-center lg:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-[#C8A97A]"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </div>
 
