@@ -45,9 +45,9 @@ const Navbar = () => {
       href: "#initiatives",
       dropdown: [
         { name: "Seminars & Centre Talk Series", href: "/intitiatives-lecture-series" },
-        { name: "Hopes Conference", href: "/hopes-conference" },
+        { name: "HOPES Conference 2026", href: "/hopes-conference" },
         { name: "Trainings & Workshops", href: "/intitiatives-training" },
-       //{ name: "Graduate Research Colloquium", href: "/intitiatives-doctoral-colloquium" },
+       { name: "Summer School", href: "/intitiatives-doctoral-colloquium" },
         { name: "Faculty & Student Exchanges", href: "/intitiatives-faculty-student-exchanges" },
       ]
     },
@@ -86,10 +86,13 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Left: CSPD Logo - Priority match screenshot */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-white font-serif text-xl lg:text-2xl font-bold tracking-tight">
-            CSPD <span className="opacity-50">·</span> <span className="text-white/80 font-medium">Christ University</span>
-          </span>
+        <Link href="/" className="flex items-center space-x-3">
+         
+          <img 
+            src="/cspdlogo.png" 
+            alt="CSPD Logo" 
+            className="h-10 lg:h-12 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
+          />
         </Link>
         {/* Desktop Links (Right) */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -133,7 +136,14 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-
+ <Link href="/" className="flex items-center space-x-3">
+          <img 
+            src="https://cspdin.wordpress.com/wp-content/uploads/2025/03/christ_university_logo.jpeg" 
+            alt="Christ University Logo" 
+            className="h-10 lg:h-12 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
+          />
+         
+        </Link>
         {/* Mobile Menu Button - Moved to end of flex row */}
         <div className="flex items-center lg:hidden">
           <button
