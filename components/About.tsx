@@ -18,8 +18,7 @@ const About = () => {
               HOPES Conference 2026
             </h2>
             <p className="text-neutral-600 text-base leading-relaxed mb-8">
-              The Department of Economics, CHRIST (Deemed to be University), Bengaluru, inaugurated the Centre for Studies in Population and Development (CSPD) to foster interdisciplinary research on population and development issues. The ceremony was graced by Prof. Norbert Meiners, Prof. S. Irudaya Rajan, and Prof. Gita Sen.
-            </p>
+This three- day conference aims for a rigorous academic discourse on health-system challenges and the latest research in social sciences, bringing together field experts and early-career researchers.            </p>
             <Link
               href="/hopes-conference"
               className="inline-flex items-center gap-2 bg-[#5C1A2E] hover:bg-[#3D111F] text-white font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"
@@ -33,13 +32,13 @@ const About = () => {
         </div>
 
         {/* TOP ROW RIGHT — Image */}
-        <div className="relative min-h-[420px] overflow-hidden">
+        <div className="relative min-h-[420px] overflow-hidden bg-[#0A0E14] flex items-center justify-center">
           <img
-            src="https://cspdin.wordpress.com/wp-content/uploads/2025/03/lecture-series.webp"
-            alt="CSPD Inauguration"
-            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            src="/hopes.jpeg"
+            alt="HOPES Conference 2026 Poster"
+            className="w-full h-full object-contain hover:scale-105 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#5C1A2E]/30 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
         </div>
 
         {/* BOTTOM ROW LEFT — Image */}
