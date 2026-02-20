@@ -21,7 +21,7 @@ const About = () => {
               The Department of Economics, CHRIST (Deemed to be University), Bengaluru, inaugurated the Centre for Studies in Population and Development (CSPD) to foster interdisciplinary research on population and development issues. The ceremony was graced by Prof. Norbert Meiners, Prof. S. Irudaya Rajan, and Prof. Gita Sen.
             </p>
             <Link
-              href="//hopes-conference"
+              href="/hopes-conference"
               className="inline-flex items-center gap-2 bg-[#5C1A2E] hover:bg-[#3D111F] text-white font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"
             >
               Learn more
