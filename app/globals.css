@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme { 
   --color-burgundy-deep: #5C1A2E;
   --color-burgundy-mid: #7D2B40;
   --color-burgundy-soft: #A34460;
