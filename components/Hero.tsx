@@ -93,7 +93,7 @@ const Hero = () => {
       <div className="container-custom relative z-10 pt-32 pb-32">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="max-w-4xl space-y-8">
-            <h1 className="text-4xl lg:text-6xl font-sans font-bold leading-[1.1] text-white animate-in fade-in slide-in-from-bottom duration-700 delay-100">
+            <h1 className="text-3xl lg:text-4xl font-serif  font-bold leading-[1.1] text-white animate-in fade-in slide-in-from-bottom duration-700 delay-100">
               Centre for Studies in <br />
               Population and Development
             </h1>
