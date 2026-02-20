@@ -86,14 +86,14 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Left: CSPD Logo - Priority match screenshot */}
-        <Link href="/" className="flex items-center space-x-3">
-         
-          <img 
-            src="/cspdlogo.png" 
-            alt="CSPD Logo" 
-            className="h-10 lg:h-12 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
-          />
-        </Link>
+       <Link href="/" className="flex items-center space-x-3">
+  <img 
+    src="/cspdlogo.png" 
+    alt="CSPD Logo" 
+    className="h-14 lg:h-16 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
+  />
+</Link>
+
         {/* Desktop Links (Right) */}
         <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -140,7 +140,7 @@ const Navbar = () => {
           <img 
             src="https://cspdin.wordpress.com/wp-content/uploads/2025/03/christ_university_logo.jpeg" 
             alt="Christ University Logo" 
-            className="h-10 lg:h-12 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
+            className="h-14 lg:h-16 w-auto object-contain bg-white p-1 rounded-md shadow-sm"
           />
          
         </Link>
