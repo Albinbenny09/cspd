@@ -12,16 +12,16 @@ const About = () => {
 
           <div className="relative z-10 max-w-lg">
             <span className="inline-block text-[#C8A97A] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              Inauguration
+              Major Event
             </span>
             <h2 className="text-[#5C1A2E] text-3xl lg:text-4xl font-bold font-serif leading-tight mb-6">
-              Centre for Studies in Population and Development
+              HOPES Conference 2026
             </h2>
             <p className="text-neutral-600 text-base leading-relaxed mb-8">
               The Department of Economics, CHRIST (Deemed to be University), Bengaluru, inaugurated the Centre for Studies in Population and Development (CSPD) to foster interdisciplinary research on population and development issues. The ceremony was graced by Prof. Norbert Meiners, Prof. S. Irudaya Rajan, and Prof. Gita Sen.
             </p>
             <Link
-              href="/about-us"
+              href="//hopes-conference"
               className="inline-flex items-center gap-2 bg-[#5C1A2E] hover:bg-[#3D111F] text-white font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"
             >
               Learn more

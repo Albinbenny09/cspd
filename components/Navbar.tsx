@@ -94,8 +94,8 @@ const Navbar = () => {
   />
 </Link>
 
-        {/* Desktop Links (Right) */}
-        <div className="hidden lg:flex items-center space-x-8">
+        {/* Desktop Links (Center) */}
+        <div className="hidden lg:flex items-center space-x-8 mx-12">
           {navLinks.map((link) => (
             <div key={link.name} className="relative group">
               {link.dropdown ? (
