@@ -109,8 +109,6 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   className="relative text-secondary font-bold uppercase tracking-widest text-xs hover:text-white transition-colors py-2 group/link"
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 >
                   {link.name}
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-secondary scale-x-0 group-hover/link:scale-x-100 transition-transform duration-300 origin-left ${link.name === "Home" ? "scale-x-100" : ""}`}></span>
@@ -126,8 +124,6 @@ const Navbar = () => {
                         key={sub.name}
                         href={sub.href}
                         className="block px-6 py-3 text-sm font-medium text-gray-700 hover:bg-burgundy-tint hover:text-primary transition-colors"
-                        target={sub.href.startsWith("http") ? "_blank" : undefined}
-                        rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       >
                         {sub.name}
                       </Link>
@@ -180,8 +176,6 @@ const Navbar = () => {
                             href={sub.href}
                             className="text-white/70 hover:text-white text-base font-medium py-1"
                             onClick={() => setIsOpen(false)}
-                            target={sub.href.startsWith("http") ? "_blank" : undefined}
-                            rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                           >
                             {sub.name}
                           </Link>
