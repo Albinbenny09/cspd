@@ -23,59 +23,59 @@ const Navbar = () => {
       name: "Team", 
       href: "#",
       dropdown: [
-        { name: "Internal Advisory Committee", href: "/internal-advisory-committee" },
-        { name: "External Advisory Committee", href: "/expert-advisory-board" },
-        { name: "Affiliate Members", href: "/team-associate-members" },
-        { name: "People", href: "/team-members" },
+        { name: "Internal Advisory Committee", href: "https://cspdin.wordpress.com/internal-advisory-committee/" },
+        { name: "External Advisory Committee", href: "https://cspdin.wordpress.com/expert-advisory-board/" },
+        { name: "Affiliate Members", href: "https://cspdin.wordpress.com/team-associate-members/" },
+        { name: "People", href: "https://cspdin.wordpress.com/team-members/" },
       ]
     },
     { 
       name: "Research Labs", 
       href: "#research",
       dropdown: [
-        { name: "Population Dynamics & Ageing", href: "/research-population-dynamics" },
-        { name: "Health, Medicine, and Care Economy", href: "/research-health-and-care-economy" },
-        { name: "Human Capital, Labour Markets and Migration", href: "/research-human-capital-and-labour-markets" },
-        { name: "Science, Technology and Innovation", href: "/research-technology-and-innovation" },
-        { name: "Food, Ecology, and Climate Change", href: "/research-food-and-ecology" },
+        { name: "Population Dynamics & Ageing", href: "https://cspdin.wordpress.com/research-population-dynamics/" },
+        { name: "Health, Medicine, and Care Economy", href: "https://cspdin.wordpress.com/research-health-and-care-economy/" },
+        { name: "Human Capital, Labour Markets and Migration", href: "https://cspdin.wordpress.com/research-human-capital-and-labour-markets/" },
+        { name: "Science, Technology and Innovation", href: "https://cspdin.wordpress.com/research-technology-and-innovation/" },
+        { name: "Food, Ecology, and Climate Change", href: "https://cspdin.wordpress.com/research-food-and-ecology/" },
       ]
     },
     { 
       name: "Initiatives", 
       href: "#initiatives",
       dropdown: [
-        { name: "Seminars & Centre Talk Series", href: "/intitiatives-lecture-series" },
-        { name: "HOPES Conference 2026", href: "/hopes-conference" },
-        { name: "Trainings & Workshops", href: "/intitiatives-training" },
-       { name: "Summer School", href: "/intitiatives-doctoral-colloquium" },
-        { name: "Faculty & Student Exchanges", href: "/intitiatives-faculty-student-exchanges" },
+        { name: "Seminars & Centre Talk Series", href: "https://cspdin.wordpress.com/intitiatives-lecture-series/" },
+        { name: "HOPES Conference 2026", href: "https://cspdin.wordpress.com/hopes-conference/" },
+        { name: "Trainings & Workshops", href: "https://cspdin.wordpress.com/intitiatives-training/" },
+        { name: "Summer School", href: "https://cspdin.wordpress.com/intitiatives-doctoral-colloquium/" },
+        { name: "Faculty & Student Exchanges", href: "https://cspdin.wordpress.com/intitiatives-faculty-student-exchanges/" },
       ]
     },
     { 
       name: "Connect", 
       href: "#connect",
       dropdown: [
-        { name: "Global", href: "/connect-global" },
-        { name: "Community", href: "/connect-community" },
+        { name: "Global", href: "https://cspdin.wordpress.com/connect-global/" },
+        { name: "Community", href: "https://cspdin.wordpress.com/connect-community/" },
       ]
     },
     { 
       name: "Resources", 
       href: "#resources",
       dropdown: [
-        { name: "Publication", href: "/resources-publications-2" },
-        { name: "Newsletter", href: "/resources-publications" },
-        { name: "Centre Data Repository (CDR)", href: "/resources-data-repository" },
+        { name: "Publication", href: "https://cspdin.wordpress.com/resources-publications-2/" },
+        { name: "Newsletter", href: "https://cspdin.wordpress.com/resources-publications/" },
+        { name: "Centre Data Repository (CDR)", href: "https://cspdin.wordpress.com/resources-data-repository/" },
       ]
     },
     { 
       name: "Careers", 
       href: "#careers",
       dropdown: [
-        { name: "Internships", href: "/intitiatives-internships" },
+        { name: "Internships", href: "https://cspdin.wordpress.com/intitiatives-internships/" },
       ]
     },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "https://cspdin.wordpress.com/contact/" },
   ];
 
   return (
@@ -126,6 +126,8 @@ const Navbar = () => {
                         key={sub.name}
                         href={sub.href}
                         className="block px-6 py-3 text-sm font-medium text-gray-700 hover:bg-burgundy-tint hover:text-primary transition-colors"
+                        target={sub.href.startsWith("http") ? "_blank" : undefined}
+                        rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       >
                         {sub.name}
                       </Link>
@@ -178,6 +180,8 @@ const Navbar = () => {
                             href={sub.href}
                             className="text-white/70 hover:text-white text-base font-medium py-1"
                             onClick={() => setIsOpen(false)}
+                            target={sub.href.startsWith("http") ? "_blank" : undefined}
+                            rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                           >
                             {sub.name}
                           </Link>
