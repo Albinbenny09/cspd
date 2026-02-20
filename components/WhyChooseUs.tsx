@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Our <span className="text-secondary">Research Labs</span>
+           <span className="text-secondary">Research Labs</span>
           </h2>
         </div>
 

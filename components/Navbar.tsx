@@ -46,8 +46,8 @@ const Navbar = () => {
       dropdown: [
         { name: "Seminars & Centre Talk Series", href: "https://cspd.in/intitiatives-lecture-series/" },
         { name: "HOPES Conference 2026", href: "https://cspd.in/hopes-conference/" },
-        { name: "Trainings & Workshops", href: "https://cspd.in/intitiatives-training/" },
         { name: "Summer School", href: "https://cspd.in/intitiatives-doctoral-colloquium/" },
+        { name: "Trainings & Workshops", href: "https://cspd.in/intitiatives-training/" },    
         { name: "Faculty & Student Exchanges", href: "https://cspd.in/intitiatives-faculty-student-exchanges/" },
       ]
     },

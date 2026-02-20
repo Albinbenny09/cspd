@@ -51,8 +51,7 @@ const Courses = () => {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="space-y-4">
-            <h3 className="text-primary font-semibold tracking-widest uppercase text-sm">CSPD Initiatives</h3>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Our Flagship <span className="text-primary">Programmes</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Flagship <span className="text-primary">Programmes</span></h2>
             <p className="text-gray-600 max-w-2xl text-lg">
               Engaging in interdisciplinary scholarship through high-impact conferences, colloquiums, and technical series.
             </p>

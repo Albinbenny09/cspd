@@ -34,7 +34,7 @@ This three- day conference aims for a rigorous academic discourse on health-syst
         {/* TOP ROW RIGHT — Image */}
         <div className="relative min-h-[420px] overflow-hidden bg-[#0A0E14] flex items-center justify-center">
           <img
-            src="/hopes.jpeg"
+            src="/hopes.png"
             alt="HOPES Conference 2026 Poster"
             className="w-full h-full object-contain hover:scale-105 transition-transform duration-700"
           />
