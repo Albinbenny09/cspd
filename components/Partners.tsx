@@ -25,7 +25,7 @@ const Partners = () => {
 
       <div className="container-custom mb-16 relative z-10 flex flex-col items-center text-center">
         <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary relative pb-6 w-fit">
-          Our Partners
+          Knowledge Partners
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-secondary rounded-full"></div>
         </h2>
         <p className="mt-10 text-neutral-mid max-w-2xl text-lg leading-relaxed">
@@ -42,8 +42,8 @@ const Partners = () => {
           {allPartners.map((partner, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-56 h-28 relative grayscale hover:grayscale-0 transition-all duration-700 opacity-60 hover:opacity-100 flex items-center justify-center group/item"
-            >
+              className="flex-shrink-0 w-56 h-28 relative transition-all duration-700 opacity-90 hover:opacity-100 hover:scale-105 flex items-center justify-center group/item"
+  >
               <div className="absolute inset-0 bg-white/40 rounded-2xl blur-xl scale-0 group-hover/item:scale-110 transition-transform duration-700 -z-10"></div>
               <div className="w-full h-full p-6 relative">
                  <Image

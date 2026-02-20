@@ -17,8 +17,9 @@ export default function Home() {
         <About />
         <WhyChooseUs />
         <Courses />
-        <Partners />
+        
         <Testimonials />
+        <Partners />
       </main>
       <Footer />
     </div>

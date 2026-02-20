@@ -31,9 +31,8 @@ const Testimonials = () => {
 
       <div className="container-custom relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-          <h3 className="text-secondary font-bold tracking-widest uppercase text-xs">Recent Events</h3>
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight font-serif">
-            Scholarly <span className="text-secondary italic">Discourse</span> & Events
+            Recent Events
           </h2>
           <p className="text-white/70 text-lg">
             A chronicle of our recent academic engagements, lectures, and community outreach.

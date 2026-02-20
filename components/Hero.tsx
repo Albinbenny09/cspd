@@ -34,9 +34,7 @@ const Hero = () => {
             <p className="text-lg text-white/80 max-w-xl leading-relaxed">
              The Centre for Studies in Population and Development, hosted by the Department of Economics, CHRIST (Deemed to be University), strives to foster research expertise on themes related to population and development. The Centre envisions to be a leader in fostering interdisciplinary scholarship, with emphasis on economic, social and climate justice.
              </p>
-            <p className="text-lg text-white/80 max-w-xl leading-relaxed">
-              The Centre’s mission is to deal with the questions of rapid demographic shifts and development challenges through evidence-based research. Population growth and ageing coexist in parts of the world, with varying implications for policy making. While Global South predominantly faces issues related to rapid urbanization, youth employment, and social security. The Global North, on the other hand, is burdened with increased healthcare costs and shrinking workforce. Our objective is to engage in deeper interdisciplinary scholarship, with concerns on equity, social and climate justice. 
-            </p>
+          
             
           </div>
           
