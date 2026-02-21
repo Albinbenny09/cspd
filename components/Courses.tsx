@@ -58,41 +58,34 @@ const Courses = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {programmes.map((prog, index) => (
-            <div 
-              key={index} 
-              className="group bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full hover:-translate-y-2"
-            >
-              <div className="mb-8 p-4 bg-primary/5 rounded-2xl w-fit group-hover:bg-primary transition-all duration-500">
-                <div className="text-primary group-hover:text-white transform group-hover:scale-110 transition-transform duration-500">
-                  {prog.icon}
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-2 mb-4">
-                <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                  {prog.category}
-                </span>
-              </div>
-
-              <h4 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">
-                {prog.title}
-              </h4>
-              
-              <p className="text-gray-600 leading-relaxed mb-8 flex-grow">
-                {prog.description}
-              </p>
-
-              {/* <div className="pt-6 border-t border-gray-50 flex items-center justify-between">
-                <a href={prog.link} className="flex items-center space-x-2 text-primary font-bold group/btn">
-                  <span>Explore Programme</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
-              </div> */}
-            </div>
-          ))}
+       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {programmes.map((prog, index) => (
+    <div
+      key={index}
+      className="group bg-white rounded-2xl px-6 py-5 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col hover:-translate-y-1"
+    >
+      <div className="flex items-center gap-3 mb-3">
+        <div className="p-2 bg-primary/5 rounded-xl group-hover:bg-primary transition-all duration-500 shrink-0">
+          <div className="text-primary group-hover:text-white transition-colors duration-500">
+            {prog.icon}
+          </div>
         </div>
+
+        <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+          {prog.category}
+        </span>
+      </div>
+
+      <h4 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors leading-tight">
+        {prog.title}
+      </h4>
+
+      <p className="text-gray-600 leading-relaxed text-sm flex-grow">
+        {prog.description}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

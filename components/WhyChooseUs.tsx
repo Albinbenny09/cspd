@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Share2 className="w-10 h-10" />,
-      title: "Science & Technology Innovation",
+      title: "Science, Technology & Innovation",
       description: "Exploring the intersections of technological advancement and human development."
     },
     {
