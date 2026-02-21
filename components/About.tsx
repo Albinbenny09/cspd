@@ -20,7 +20,7 @@ const About = () => {
             <p className="text-neutral-600 text-base leading-relaxed mb-8">
 This three-day conference aims for a rigorous academic discourse on health-system challenges and the latest research in social sciences, bringing together field experts and early-career researchers.            </p>
             <Link
-              href="/hopes-conference"
+              href="https://cspdin.wordpress.com/hopes-conference/"
               className="inline-flex items-center gap-2 bg-[#5C1A2E] hover:bg-[#3D111F] text-white font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"
             >
               Learn more
@@ -70,7 +70,7 @@ This three-day conference aims for a rigorous academic discourse on health-syste
               A small group of students and faculty visited the Kotagiri and Gudalur taluks in the Nilgiris District, Tamil Nadu. The visit was organised as part of the collaboration between CHRIST (Deemed to be University) and TDU on a Department of Science and Technology Project, Government of India. The students visited tribal enterprises, conducted focus group discussions with the Irula community and engaged in household visits to understand livelihoods concerns of the community.
             </p>
             <Link
-              href="/activities"
+              href="https://cspdin.wordpress.com/connect-outreach-programmes/"
               className="inline-flex items-center gap-2 border border-[#5C1A2E] hover:bg-[#5C1A2E] hover:text-white text-[#5C1A2E] font-bold text-xs uppercase tracking-widest py-3 px-7 transition-all duration-300"
             >
               Learn more

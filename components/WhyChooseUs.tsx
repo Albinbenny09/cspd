@@ -38,24 +38,25 @@ const WhyChooseUs = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {labs.map((lab, index) => (
-            <div 
-              key={index} 
-              className="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
-            >
-              <div className="mb-8 p-4 rounded-2xl bg-white/10 group-hover:bg-primary/5 transition-colors w-fit">
-                <div className="text-secondary group-hover:text-primary transition-colors">
-                  {lab.icon}
-                </div>
-              </div>
-              <h4 className="text-xl font-bold mb-4">{lab.title}</h4>
-              <p className="text-white/70 group-hover:text-gray-600 leading-relaxed">
-                {lab.description}
-              </p>
-            </div>
-          ))}
+       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {labs.map((lab, index) => (
+    <div
+      key={index}
+      className="group px-6 py-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+    >
+      <div className="flex items-center gap-3 mb-3">
+        <div className="p-2 rounded-xl bg-white/10 group-hover:bg-primary/5 transition-colors shrink-0 text-secondary group-hover:text-primary">
+          {lab.icon}
         </div>
+        <h4 className="text-lg font-bold leading-tight">{lab.title}</h4>
+      </div>
+
+      <p className="text-white/70 group-hover:text-gray-600 leading-relaxed text-sm">
+        {lab.description}
+      </p>
+    </div>
+  ))}
+</div>
         
         
       </div>

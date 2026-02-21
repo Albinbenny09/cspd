@@ -76,7 +76,7 @@ const Testimonials = () => {
         </div>
         
         <div className="mt-16 text-center">
-            <a href="https://cspd.in/" className="inline-flex items-center gap-2 text-secondary font-bold hover:text-white transition-colors border-b border-secondary/20 pb-1">
+            <a href="https://cspdin.wordpress.com/connect-community/" className="inline-flex items-center gap-2 text-secondary font-bold hover:text-white transition-colors border-b border-secondary/20 pb-1">
                 View All Events <ArrowRight size={18} />
             </a>
         </div>

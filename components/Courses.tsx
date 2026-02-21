@@ -51,7 +51,7 @@ const Courses = () => {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Flagship <span className="text-primary">Programmes</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900"> <span className="text-primary">Flagship Programmes</span></h2>
             <p className="text-gray-600 max-w-2xl text-lg">
               Engaging in interdisciplinary scholarship through high-impact conferences, colloquiums, and technical series.
             </p>
@@ -84,12 +84,12 @@ const Courses = () => {
                 {prog.description}
               </p>
 
-              <div className="pt-6 border-t border-gray-50 flex items-center justify-between">
+              {/* <div className="pt-6 border-t border-gray-50 flex items-center justify-between">
                 <a href={prog.link} className="flex items-center space-x-2 text-primary font-bold group/btn">
                   <span>Explore Programme</span>
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                 </a>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -104,7 +104,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 pt-4 animate-in fade-in slide-in-from-bottom duration-700 delay-300">
               <Link
-                href="/about-us"
+                href="https://cspdin.wordpress.com/about-us"
                 className="bg-[#C8A97A] hover:bg-[#E8D5B4] text-[#5C1A2E] font-bold py-4 px-10 rounded-sm shadow-xl transition-all duration-300 text-sm uppercase tracking-widest text-center"
               >
                 Take A Deep Dive
