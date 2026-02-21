@@ -7,42 +7,42 @@ const Courses = () => {
       category: "Flagship",
       description: "Annual International Conference of CSPD focusing on global demographic shifts.",
       icon: <Globe className="w-12 h-12 text-primary" />,
-      link: "https://cspd.in/intitiatives-conferences/"
+      link: "https://cspdin.wordpress.com/intitiatives-conferences/"
     },
     {
       title: "Graduate Research Colloquium",
       category: "Academic",
       description: "Platform for doctoral students to showcase interdisciplinary research.",
       icon: <Users className="w-12 h-12 text-primary" />,
-      link: "https://cspd.in/intitiatives-doctoral-colloquium/"
+      link: "https://cspdin.wordpress.com/intitiatives-doctoral-colloquium/"
     },
     {
       title: "Centre Talk Series",
       category: "Lecture",
       description: "Regular scholarly lectures by leading experts in Economics and Social Sciences.",
       icon: <Presentation className="w-12 h-12 text-primary" />,
-      link: "https://cspd.in/intitiatives-lecture-series/"
+      link: "https://cspdin.wordpress.com/intitiatives-lecture-series/"
     },
     {
       title: "Centre Webinar Series",
-      category: "Digital",
+      category: "Hybrid",
       description: "Engaging global audiences through evidence-based research discussions.",
       icon: <Globe className="w-12 h-12 text-primary" />,
-      link: "https://cspd.in/"
+      link: "https://cspdin.wordpress.com/"
     },
     {
       title: "Centre Data Repository",
       category: "Resources",
       description: "Comprehensive data collection on population and development metrics.",
       icon: <Database className="w-12 h-12 text-primary" />,
-      link: "https://cspd.in/resources-data-repository/"
+      link: "https://cspdin.wordpress.com/resources-data-repository/"
     },
     {
        title: "Publications",
        category: "Research",
        description: "Regular Books, Articles, Policy Briefs and Working Papers.",
        icon: <BookOpen className="w-12 h-12 text-primary" />,
-       link: "https://cspd.in/resources-publications-2/"
+       link: "https://cspdin.wordpress.com/resources-publications-2/"
     }
   ];
 

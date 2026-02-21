@@ -63,19 +63,19 @@ const Navbar = () => {
       name: "Resources", 
       href: "#resources",
       dropdown: [
-        { name: "Publication", href: "https://cspd.in/resources-publications-2/" },
-        { name: "Newsletter", href: "https://cspd.in/resources-publications/" },
-        { name: "Centre Data Repository (CDR)", href: "https://cspd.in/resources-data-repository/" },
+        { name: "Publication", href: "https://cspdin.wordpress.com/resources-publications-2/" },
+        { name: "Newsletter", href: "https://cspdin.wordpress.com/resources-publications/" },
+        { name: "Centre Data Repository (CDR)", href: "https://cspdin.wordpress.com/resources-data-repository/" },
       ]
     },
     { 
       name: "Careers", 
       href: "#careers",
       dropdown: [
-        { name: "Internships", href: "https://cspd.in/intitiatives-internships/" },
+        { name: "Internships", href: "https://cspdin.wordpress.com/intitiatives-internships/" },
       ]
     },
-    { name: "Contact", href: "https://cspd.in/contact/" },
+    { name: "Contact", href: "https://cspdin.wordpress.com/contact/" },
   ];
 
   return (

@@ -87,10 +87,10 @@ const Footer = () => {
           <p className="text-white/40 text-xs">
             © {new Date().getFullYear()} Centre for Studies in Population and Development (CSPD). Hosted by CHRIST (Deemed to be University).
           </p>
-          <div className="flex space-x-8 text-xs text-white/40">
+          {/* <div className="flex space-x-8 text-xs text-white/40">
             <Link href="https://cspd.in/" className="hover:text-secondary transition-colors uppercase tracking-widest leading-none border-b border-transparent hover:border-secondary pb-px">Bluesky</Link>
             <Link href="https://cspd.in/" className="hover:text-secondary transition-colors uppercase tracking-widest leading-none border-b border-transparent hover:border-secondary pb-px">RSS Feed</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
