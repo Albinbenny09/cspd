@@ -4,6 +4,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 
+type NavItem = {
+  name: string;
+  href: string;
+  children?: NavItem[];
+};
+
+type NavLink = {
+  name: string;
+  href: string;
+  dropdown?: NavItem[];
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -17,65 +29,83 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { name: "Home", href: "/" },
     { 
       name: "Team", 
       href: "#",
       dropdown: [
-        { name: "Internal Advisory Committee", href: "https://cspdin.wordpress.com/internal-advisory-committee/" },
-        { name: "External Advisory Committee", href: "https://cspdin.wordpress.com/expert-advisory-board/" },
-        { name: "Affiliate Members", href: "https://cspdin.wordpress.com/team-associate-members/" },
-        { name: "People", href: "https://cspdin.wordpress.com/team-members/" },
+        { name: "Internal Advisory Committee", href: "/internal-advisory-committee" },
+        { name: "External Advisory Committee", href: "/external-advisory-committee" },
+        { name: "Affiliate Members", href: "/team-associate-members" },
+        { name: "People", href: "/team-members" },
       ]
     },
     { 
       name: "Research Labs", 
       href: "#research",
       dropdown: [
-        { name: "Population Dynamics & Ageing", href: "https://cspdin.wordpress.com/research-population-dynamics/" },
-        { name: "Health, Medicine, and Care Economy", href: "https://cspdin.wordpress.com/research-health-and-care-economy/" },
-        { name: "Human Capital, Labour Markets and Migration", href: "https://cspdin.wordpress.com/research-human-capital-and-labour-markets/" },
-        { name: "Science, Technology and Innovation", href: "https://cspdin.wordpress.com/research-technology-and-innovation/" },
-        { name: "Food, Ecology, and Climate Change", href: "https://cspdin.wordpress.com/research-food-and-ecology/" },
+        { name: "Population Dynamics & Ageing", href: "/research-population-dynamics" },
+        { name: "Health, Medicine, and Care Economy", href: "/research-health-and-care-economy" },
+        { name: "Human Capital, Labour Markets and Migration", href: "/research-human-capital-and-labour-markets" },
+        { name: "Science, Technology and Innovation", href: "/research-technology-and-innovation" },
+        { name: "Food, Ecology, and Climate Change", href: "/research-food-and-ecology" },
       ]
     },
     { 
       name: "Initiatives", 
       href: "#initiatives",
       dropdown: [
-        { name: "Seminars & Centre Talk Series", href: "https://cspdin.wordpress.com/intitiatives-lecture-series/" },
-        { name: "HOPES Conference 2026", href: "https://cspdin.wordpress.com/hopes-conference/" },
-        { name: "Summer School", href: "https://cspdin.wordpress.com/intitiatives-doctoral-colloquium/" },
-        { name: "Trainings & Workshops", href: "https://cspdin.wordpress.com/intitiatives-training/" },    
-        { name: "Faculty & Student Exchanges", href: "https://cspdin.wordpress.com/intitiatives-faculty-student-exchanges/" },
+        { name: "Seminars & Centre Talk Series", href: "/intitiatives-lecture-series" },
+        { name: "HOPES Conference 2026", href: "/hopes-conference" },
+        { name: "Summer School", href: "/intitiatives-doctoral-colloquium" },
+        { name: "Trainings & Workshops", href: "/intitiatives-training" },
+        { name: "Faculty & Student Exchanges", href: "/intitiatives-faculty-student-exchanges" },
       ]
     },
     { 
       name: "Connect", 
       href: "#connect",
       dropdown: [
-        { name: "Global", href: "https://cspdin.wordpress.com/connect-global/" },
-        { name: "Community", href: "https://cspdin.wordpress.com/connect-community/" },
+        { name: "Global", href: "/connect-global" },
+        {
+          name: "Community",
+          href: "/connect-community",
+          children: [
+            { name: "Outreach Programs", href: "/connect-outreach-programmes" },
+            { name: "NGO Connect", href: "/connect-ngo-connect" },
+            { name: "Field Engagements", href: "/intitiatives-field-engagements" },
+          ],
+        },
       ]
     },
     { 
       name: "Resources", 
       href: "#resources",
       dropdown: [
-        { name: "Publication", href: "https://cspdin.wordpress.com/resources-publications-2/" },
-        { name: "Newsletter", href: "https://cspdin.wordpress.com/resources-publications/" },
-        { name: "Centre Data Repository (CDR)", href: "https://cspdin.wordpress.com/resources-data-repository/" },
+        {
+          name: "Publications",
+          href: "/resources-publications-2",
+          children: [
+            { name: "Books", href: "/resources-books" },
+            { name: "Articles", href: "/resources-articles" },
+            { name: "Policy Briefs", href: "/resources-policy-briefs" },
+            { name: "Working Papers", href: "/resources-working-papers" },
+            { name: "Student Blogs", href: "/resources-student-blogs" },
+          ],
+        },
+        { name: "Newsletter", href: "/resources-publications" },
+        { name: "Centre Data Repository (CDR)", href: "/resources-data-repository" },
       ]
     },
     { 
       name: "Careers", 
       href: "#careers",
       dropdown: [
-        { name: "Internships", href: "https://cspdin.wordpress.com/intitiatives-internships/" },
+        { name: "Internships", href: "/intitiatives-internships" },
       ]
     },
-    { name: "Contact", href: "https://cspdin.wordpress.com/contact/" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -120,13 +150,29 @@ const Navbar = () => {
                 <div className="absolute top-full left-0 mt-2 w-56 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 z-50">
                   <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 py-2">
                     {link.dropdown.map((sub) => (
-                      <a
-                        key={sub.name}
-                        href={sub.href}
-                        className="block px-6 py-3 text-sm font-medium text-gray-700 hover:bg-burgundy-tint hover:text-primary transition-colors"
-                      >
-                        {sub.name}
-                      </a>
+                      <div key={sub.name} className="relative">
+                        <a
+                          href={sub.href}
+                          className="flex items-center justify-between px-6 py-3 text-sm font-medium text-gray-700 hover:bg-burgundy-tint hover:text-primary transition-colors"
+                        >
+                          <span>{sub.name}</span>
+                          {sub.children && <ChevronDown className="h-4 w-4 text-gray-500" />}
+                        </a>
+
+                        {sub.children && (
+                          <div className="pb-2">
+                            {sub.children.map((child) => (
+                              <a
+                                key={child.name}
+                                href={child.href}
+                                className="block px-10 py-2 text-sm text-gray-600 hover:bg-burgundy-tint hover:text-primary transition-colors"
+                              >
+                                {child.name}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -171,14 +217,29 @@ const Navbar = () => {
                     {activeDropdown === link.name && (
                       <div className="flex flex-col pl-4 space-y-2 mt-2 border-l border-white/10">
                         {link.dropdown.map((sub) => (
-                          <a
-                            key={sub.name}
-                            href={sub.href}
-                            className="text-white/70 hover:text-white text-base font-medium py-1"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {sub.name}
-                          </a>
+                          <div key={sub.name} className="flex flex-col">
+                            <a
+                              href={sub.href}
+                              className="text-white/70 hover:text-white text-base font-medium py-1"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {sub.name}
+                            </a>
+                            {sub.children && (
+                              <div className="mt-1 space-y-1 border-l border-white/10 pl-3">
+                                {sub.children.map((child) => (
+                                  <a
+                                    key={child.name}
+                                    href={child.href}
+                                    className="block text-white/60 hover:text-white text-sm py-1"
+                                    onClick={() => setIsOpen(false)}
+                                  >
+                                    {child.name}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     )}
@@ -211,3 +272,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
