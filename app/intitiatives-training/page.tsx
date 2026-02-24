@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Trainings and Workshops"
       wordpressUrl="https://cspdin.wordpress.com/intitiatives-training/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

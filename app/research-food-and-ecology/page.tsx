@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Food, Ecology, and Climate Change"
       wordpressUrl="https://cspdin.wordpress.com/research-food-and-ecology/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

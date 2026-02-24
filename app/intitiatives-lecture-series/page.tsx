@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Seminars and Centre Talk Series"
       wordpressUrl="https://cspdin.wordpress.com/intitiatives-lecture-series/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Population Dynamics and Ageing"
       wordpressUrl="https://cspdin.wordpress.com/research-population-dynamics/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

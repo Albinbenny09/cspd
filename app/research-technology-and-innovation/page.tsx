@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Science, Technology and Innovation"
       wordpressUrl="https://cspdin.wordpress.com/research-technology-and-innovation/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

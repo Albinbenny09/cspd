@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Newsletter"
       wordpressUrl="https://cspdin.wordpress.com/resources-publications/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

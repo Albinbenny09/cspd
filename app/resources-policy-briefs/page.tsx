@@ -3,12 +3,9 @@ import WordPressEmbedPage from "@/components/WordPressEmbedPage";
 export default function Page() {
   return (
     <WordPressEmbedPage
-      title="Affiliate Members"
-      wordpressUrl="https://cspdin.wordpress.com/team-associate-members/"
+      title="Policy Briefs"
+      wordpressUrl="https://cspdin.wordpress.com/resources-policy-briefs/"
       headerCropPx={190}
     />
   );
 }
-
-
-

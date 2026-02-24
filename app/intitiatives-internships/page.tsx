@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Internships"
       wordpressUrl="https://cspdin.wordpress.com/intitiatives-internships/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

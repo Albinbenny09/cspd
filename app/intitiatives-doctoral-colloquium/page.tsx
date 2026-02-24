@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Summer School"
       wordpressUrl="https://cspdin.wordpress.com/intitiatives-doctoral-colloquium/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Global"
       wordpressUrl="https://cspdin.wordpress.com/connect-global/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

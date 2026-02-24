@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Faculty and Student Exchanges"
       wordpressUrl="https://cspdin.wordpress.com/intitiatives-faculty-student-exchanges/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

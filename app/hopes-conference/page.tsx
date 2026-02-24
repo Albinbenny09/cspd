@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="HOPES Conference 2026"
       wordpressUrl="https://cspdin.wordpress.com/hopes-conference/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

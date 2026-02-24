@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Centre Data Repository"
       wordpressUrl="https://cspdin.wordpress.com/resources-data-repository/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

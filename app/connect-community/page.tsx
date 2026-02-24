@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Community"
       wordpressUrl="https://cspdin.wordpress.com/connect-community/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 

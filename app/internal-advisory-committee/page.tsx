@@ -5,9 +5,10 @@ export default function Page() {
     <WordPressEmbedPage
       title="Internal Advisory Committee"
       wordpressUrl="https://cspdin.wordpress.com/internal-advisory-committee/"
-      headerCropPx={0}
+      headerCropPx={190}
     />
   );
 }
+
 
 
