@@ -20,9 +20,6 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "CSPD | Centre for Studies in Population and Development",
   description: "Leading interdisciplinary scholarship on population and development with an emphasis on economic, social and climate justice.",
-  icons: {
-    icon: '/icon.jpg',
-  },
 
 };
 
